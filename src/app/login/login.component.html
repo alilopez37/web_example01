@@ -1,0 +1,27 @@
+<div id="login">
+    <form id="login-container" [formGroup]="miForm">
+        <div>
+            <div class="login-component">
+                <label for="">Username</label>
+            </div>
+            <div>
+                <input type="text" class="login-component" formControlName="username">
+            </div>
+            <div>
+                <p *ngIf="this.miForm.invalid && this.miForm.touched">Error</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="">Password</label>
+            </div>
+            <div>
+                <input type="text" class="login-component" formControlName="password">
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="button-58" (click)="submit()">Iniciar sesión</button>
+        </div>
+    </form>
+</div>

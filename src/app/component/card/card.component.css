@@ -1,0 +1,16 @@
+
+
+#box-card_img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid red;
+    background-color: blue;
+}
+
+
+button {
+    width: 90%;
+    height: 50px;
+    background-color: blue;
+    
+}

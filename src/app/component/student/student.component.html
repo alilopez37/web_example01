@@ -1,0 +1,29 @@
+<div>
+    <form [formGroup]="miFormulario">
+
+        <div>
+            <label for="">First Name:</label>
+            <input type="text" formControlName="firstName">
+            <div *ngIf="miFormulario.get('firstName')?.invalid && miFormulario.get('firstName')?.touched">
+                El nombre es requerido.
+            </div>
+        </div>
+        
+        <div>
+            <label for="">Last Name</label>
+            <input type="text" formControlName="lastName">
+            <div *ngIf="miFormulario.get('lastName')?.invalid && miFormulario.get('lastName')?.touched">
+                El primer apellido es requerido.
+            </div>
+        </div>
+        
+        <div>
+            <label for="">Age</label>
+            <input type="number" formControlName="age">
+        </div>
+        <div>
+            <button (click)="submit()">Almacenar</button>
+        </div>
+    </form>
+</div>
+    
