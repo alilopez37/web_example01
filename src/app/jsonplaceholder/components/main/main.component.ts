@@ -16,8 +16,9 @@ export class MainComponent implements OnInit{
   constructor(readonly postsService : PostsService) {}
 
   ngOnInit(): void {
-    this.postsService.getPosts().subscribe((value : IPosts[]) => {
-      this.posts = value
-    })
+    this.postsService.getPosts()
+    //this.postsService.getPosts().subscribe((value : IPosts[]) => {
+    //  this.posts = value
+    //})
   }
 }

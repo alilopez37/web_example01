@@ -4,6 +4,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive} from '@angular/router';
 import { MainComponent } from './component/main/main.component';
 import { LoginComponent } from './login/login.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
